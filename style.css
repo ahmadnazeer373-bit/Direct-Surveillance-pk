@@ -2,48 +2,91 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #111;
+    color: #eee;
 }
 
 header {
-    background-color: #0066cc;
-    color: white;
+    background-color: #000;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    border-bottom: 3px solid #00aaff;
 }
 
 header h1 {
+    font-size: 45px;
     margin: 0;
-    font-size: 42px;
+    color: #00aaff;
 }
 
 header p {
-    font-size: 20px;
+    font-size: 22px;
+    color: white;
 }
+
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
 
 section {
-    background-color: white;
+    background-color: #1c1c1c;
     width: 80%;
-    margin: 25px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #bbb;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
 }
 
+
 h2 {
-    color: #0066cc;
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
 }
+
 
 ul {
     font-size: 18px;
     line-height: 35px;
 }
 
+
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #000;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    section {
+        width: 85%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
 }
