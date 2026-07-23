@@ -169,3 +169,22 @@ footer {
 .whatsapp:hover {
     background-color: #128C7E;
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00aaff;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
