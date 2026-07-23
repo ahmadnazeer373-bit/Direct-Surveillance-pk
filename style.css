@@ -153,3 +153,19 @@ footer {
     margin: auto;
     border-radius: 50%;
 }
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.whatsapp:hover {
+    background-color: #128C7E;
+}
