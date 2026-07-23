@@ -188,3 +188,15 @@ footer {
     transform: scale(1.05);
     transition: 0.3s;
 }
+.contact-box {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #00aaff;
+}
+
+.contact-box p {
+    margin: 15px;
+}
