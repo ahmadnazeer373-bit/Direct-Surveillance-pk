@@ -90,3 +90,18 @@ footer {
         margin: 10px;
     }
 }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #00aaff;
+}
