@@ -129,3 +129,27 @@ footer {
     transform: translateY(-5px);
     transition: 0.3s;
 }
+.hero {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("https://images.unsplash.com/photo-1557597774-9d273605dfa9");
+
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #00aaff;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: auto;
+    border-radius: 50%;
+}
