@@ -1803,3 +1803,20 @@ ul{
     }
 
 }
+/*======================================
+        MOBILE MENU ACTIVE
+======================================*/
+
+.navbar.active{
+
+    display:block;
+
+}
+
+.header.sticky{
+
+    background:#08111f;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.30);
+
+}
