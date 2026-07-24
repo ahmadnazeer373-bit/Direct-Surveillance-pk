@@ -1820,3 +1820,56 @@ ul{
     box-shadow:0 8px 20px rgba(0,0,0,.30);
 
 }
+/*======================================
+        BACK TO TOP
+======================================*/
+
+.back-to-top{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.back-to-top.show{
+
+    display:flex;
+
+}
