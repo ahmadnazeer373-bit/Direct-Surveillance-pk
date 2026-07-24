@@ -1214,3 +1214,211 @@ ul{
     font-size:15px;
 
 }
+/*======================================
+        CONTACT SECTION
+======================================*/
+
+.contact{
+
+    padding:100px 0;
+
+    background:#0b1320;
+
+}
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:50px;
+
+    align-items:start;
+
+    margin-top:60px;
+
+}
+
+
+/*======================================
+        CONTACT INFO
+======================================*/
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.contact-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#14233a;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.contact-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,212,255,.20);
+
+}
+
+.contact-box i{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    flex-shrink:0;
+
+}
+
+.contact-box h3{
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+    font-size:20px;
+
+}
+
+.contact-box p{
+
+    color:#cfd8e3;
+
+    font-size:16px;
+
+}
+
+
+/*======================================
+        CONTACT FORM
+======================================*/
+
+.contact-form{
+
+    background:#14233a;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#1c2f4a;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#aeb8c5;
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:160px;
+
+}
+
+
+/*======================================
+        SUBMIT BUTTON
+======================================*/
+
+.submit-btn{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,212,255,.30);
+
+}
