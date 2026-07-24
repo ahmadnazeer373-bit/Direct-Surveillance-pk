@@ -2120,3 +2120,113 @@ ul{
     }
 
 }
+/*======================================
+        COUNTER SECTION CSS
+=======================================*/
+
+.counter-section{
+
+    padding:80px 0;
+
+    background:#08111f;
+
+}
+
+
+.counter-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+.counter-item{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:.3s;
+
+}
+
+
+.counter-item:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.counter-item i{
+
+    font-size:40px;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+}
+
+
+.counter-item h2{
+
+    font-size:45px;
+
+    color:#ffffff;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+
+.counter-item p{
+
+    color:#cfd8e3;
+
+    font-size:17px;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .counter-box{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .counter-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .counter-item h2{
+
+        font-size:38px;
+
+    }
+
+}
