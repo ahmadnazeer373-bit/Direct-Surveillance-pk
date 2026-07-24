@@ -2230,3 +2230,138 @@ ul{
     }
 
 }
+/*======================================
+        BRAND LOGO SECTION CSS
+=======================================*/
+
+.brands-section{
+
+    padding:80px 0;
+
+    background:#ffffff;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title span{
+
+    color:#00aeea;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+.section-title h2{
+
+    color:#08111f;
+
+    font-size:35px;
+
+    margin-top:10px;
+
+}
+
+
+
+/* Brand Slider */
+
+.brands-slider{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:30px;
+
+    align-items:center;
+
+}
+
+
+
+.brand-item{
+
+    height:120px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#f7f9fc;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.brand-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+.brand-item img{
+
+    max-width:150px;
+
+    max-height:70px;
+
+    object-fit:contain;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .brands-slider{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .brands-slider{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+}
