@@ -198,3 +198,279 @@ ul{
     cursor:pointer;
 
 }
+/*======================================
+            HERO SECTION
+=======================================*/
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+}
+
+
+/*======================================
+        HERO BACKGROUND VIDEO
+=======================================*/
+
+.hero-video{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+
+}
+
+
+/*======================================
+        HERO OVERLAY
+=======================================*/
+
+.hero-overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(8,17,31,.82);
+
+    z-index:-1;
+
+}
+
+
+/*======================================
+        HERO CONTENT
+=======================================*/
+
+.hero-content{
+
+    max-width:750px;
+
+    text-align:center;
+
+    margin:auto;
+
+}
+
+
+/*======================================
+        HERO SUBTITLE
+=======================================*/
+
+.hero-subtitle{
+
+    display:inline-block;
+
+    color:#00d4ff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+/*======================================
+        HERO TITLE
+=======================================*/
+
+.hero-content h1{
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+
+/*======================================
+        HERO PARAGRAPH
+=======================================*/
+
+.hero-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#d6d6d6;
+
+    margin-bottom:40px;
+
+}
+
+
+/*======================================
+        HERO BUTTONS
+=======================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.primary-btn,
+.secondary-btn{
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+
+/* Primary Button */
+
+.primary-btn{
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,212,255,.35);
+
+}
+
+
+/* Secondary Button */
+
+.secondary-btn{
+
+    border:2px solid #00d4ff;
+
+    color:#ffffff;
+
+}
+
+.secondary-btn:hover{
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+}
+
+
+/*======================================
+        SCROLL DOWN
+=======================================*/
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    animation:float 2s infinite;
+
+}
+
+.scroll-down i{
+
+    font-size:22px;
+
+    color:#00d4ff;
+
+}
+
+
+/*======================================
+        ANIMATION
+=======================================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+
+    }
+
+    100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+}
