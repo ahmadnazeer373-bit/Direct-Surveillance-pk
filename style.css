@@ -1642,3 +1642,164 @@ ul{
     transform:scale(1.12);
 
 }
+/*======================================
+        RESPONSIVE DESIGN
+======================================*/
+
+@media (max-width:991px){
+
+    .header .container{
+
+        padding:15px 20px;
+
+    }
+
+    .navbar{
+
+        display:none;
+
+    }
+
+    .header-buttons{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        font-size:28px;
+
+        color:#ffffff;
+
+        cursor:pointer;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .stats-grid,
+    .about-wrapper,
+    .services-grid,
+    .products-grid,
+    .brands-grid,
+    .gallery-grid,
+    .why-grid,
+    .testimonial-grid,
+    .contact-wrapper,
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .experience-box{
+
+        right:20px;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .hero{
+
+        padding:140px 0 100px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .primary-btn,
+    .secondary-btn,
+    .about-btn,
+    .submit-btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .section-title h2{
+
+        font-size:26px;
+
+    }
+
+    .stat-box h2{
+
+        font-size:34px;
+
+    }
+
+    .floating-whatsapp{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:28px;
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+}
