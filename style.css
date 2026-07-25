@@ -411,7 +411,7 @@ ul{
 
 .about{
 
-    padding:110px 0;
+    padding:90px 0;
 
     background:#08111f;
 
@@ -423,9 +423,9 @@ ul{
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:45% 55%;
 
-    gap:60px;
+    gap:50px;
 
     align-items:center;
 
@@ -449,7 +449,7 @@ ul{
 
     width:100%;
 
-    height:320px;
+    height:260px;
 
     object-fit:cover;
 
@@ -469,15 +469,15 @@ ul{
 
     position:absolute;
 
-    bottom:20px;
+    bottom:15px;
 
-    right:-20px;
+    right:-15px;
 
     background:#00d4ff;
 
     color:#08111f;
 
-    padding:20px;
+    padding:18px 22px;
 
     border-radius:15px;
 
@@ -491,7 +491,7 @@ ul{
 
 .experience-box h3{
 
-    font-size:36px;
+    font-size:32px;
 
     margin:0;
 
@@ -519,11 +519,23 @@ ul{
 
 
 
+.section-subtitle{
+
+    color:#00d4ff;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+
+
 .about-content h2{
 
-    font-size:42px;
+    font-size:38px;
 
-    margin:20px 0;
+    margin:18px 0;
 
     line-height:1.3;
 
@@ -537,25 +549,15 @@ ul{
 
     line-height:1.8;
 
-    margin-bottom:30px;
-
-}
-
-
-
-.section-subtitle{
-
-    color:#00d4ff;
-
-    font-weight:600;
-
-    letter-spacing:1px;
+    margin-bottom:25px;
 
 }
 
 
 
 
+
+/* Features */
 
 .about-features{
 
@@ -563,9 +565,9 @@ ul{
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:20px;
+    gap:15px;
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
@@ -575,9 +577,9 @@ ul{
 
     display:flex;
 
-    gap:10px;
-
     align-items:center;
+
+    gap:10px;
 
 }
 
@@ -595,6 +597,8 @@ ul{
 
 
 
+/* Button */
+
 .about-btn{
 
     display:inline-block;
@@ -603,7 +607,7 @@ ul{
 
     color:#08111f;
 
-    padding:15px 35px;
+    padding:14px 32px;
 
     border-radius:50px;
 
@@ -627,8 +631,7 @@ ul{
 
 
 
-/* Mobile Responsive */
-
+/* Responsive */
 
 @media(max-width:992px){
 
@@ -640,19 +643,18 @@ ul{
     }
 
 
+    .about-image img{
+
+        height:280px;
+
+    }
+
+
     .about-content h2{
 
         font-size:34px;
 
     }
-
-
-    .about-image img{
-
-        height:320px;
-
-    }
-
 
 }
 
@@ -670,10 +672,9 @@ ul{
 
     .about-image img{
 
-        height:280px;
+        height:240px;
 
     }
-
 
 }
 /*======================================
