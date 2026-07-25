@@ -443,11 +443,11 @@ ul{
 
 
 
-.about-image img{
+..about-image img{
 
     width:100%;
 
-    height:420px;
+    height:320px;
 
     object-fit:cover;
 
