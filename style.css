@@ -161,3 +161,146 @@ ul{
     color:#00d4ff;
 
 }
+/*======================================
+            HERO SECTION
+=======================================*/
+
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    background:
+
+    linear-gradient(
+    rgba(8,17,31,.85),
+    rgba(8,17,31,.95)
+    ),
+
+    radial-gradient(
+    circle at top right,
+    #00d4ff33,
+    transparent 40%
+    );
+
+    overflow:hidden;
+
+}
+
+
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+.hero-content{
+
+    position:relative;
+
+    max-width:750px;
+
+}
+
+
+
+.hero-subtitle{
+
+    color:#00d4ff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin:20px 0;
+
+}
+
+
+
+.hero-content p{
+
+    color:#d6d6d6;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.primary-btn,
+.secondary-btn{
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.primary-btn{
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+}
+
+
+
+.secondary-btn{
+
+    border:2px solid #00d4ff;
+
+    color:#00d4ff;
+
+}
+
+
+
+.primary-btn:hover,
+.secondary-btn:hover{
+
+    transform:translateY(-5px);
+
+}
