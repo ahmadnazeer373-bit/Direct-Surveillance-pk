@@ -821,3 +821,104 @@ ul{
 
 
 }
+/*======================================
+            BRANDS SECTION
+=======================================*/
+
+
+.brands-section{
+
+    padding:90px 0;
+
+    background:#0b1728;
+
+}
+
+
+
+.brands-wrapper{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+
+
+.brand-item{
+
+    height:120px;
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    transition:.35s;
+
+}
+
+
+
+.brand-item img{
+
+    max-width:100%;
+
+    max-height:70px;
+
+    object-fit:contain;
+
+}
+
+
+
+.brand-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,212,255,.25);
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:992px){
+
+
+    .brands-wrapper{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .brands-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
