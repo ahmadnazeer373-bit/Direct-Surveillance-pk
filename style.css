@@ -1227,3 +1227,136 @@ ul{
     }
 
 }
+/*======================================
+            FOOTER SECTION
+=======================================*/
+
+
+.footer{
+
+    padding:70px 0 20px;
+
+    background:#050b14;
+
+}
+
+
+
+.footer-wrapper{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+
+
+.footer-box h3{
+
+    color:#00d4ff;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-box p{
+
+    color:#d6d6d6;
+
+    line-height:1.8;
+
+}
+
+
+
+.footer-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.footer-box ul li a{
+
+    color:#d6d6d6;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.footer-box ul li a:hover{
+
+    color:#00d4ff;
+
+}
+
+
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid #16324a;
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+}
+
+
+
+.footer-bottom p{
+
+    color:#aaa;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:992px){
+
+    .footer-wrapper{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .footer-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
