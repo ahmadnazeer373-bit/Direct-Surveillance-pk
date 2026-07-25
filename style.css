@@ -920,7 +920,7 @@ ul{
 
     padding:20px;
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -950,9 +950,7 @@ ul{
 
 /* Responsive */
 
-
 @media(max-width:992px){
-
 
     .brands-wrapper{
 
@@ -960,13 +958,11 @@ ul{
 
     }
 
-
 }
 
 
 
 @media(max-width:576px){
-
 
     .brands-wrapper{
 
@@ -974,5 +970,5 @@ ul{
 
     }
 
-
+}
 }
