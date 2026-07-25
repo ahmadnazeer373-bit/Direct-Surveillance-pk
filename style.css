@@ -562,6 +562,7 @@ ul{
 
 }
 
+
 .about-wrapper{
 
     display:grid;
@@ -574,11 +575,15 @@ ul{
 
 }
 
+
+
 .about-image{
 
     position:relative;
 
 }
+
+
 
 .about-image img{
 
@@ -586,41 +591,73 @@ ul{
 
     border-radius:20px;
 
+    display:block;
+
 }
+
+
+
+/* Experience Box */
 
 .experience-box{
 
     position:absolute;
 
-    bottom:25px;
+    bottom:20px;
 
     right:-20px;
+
+    width:160px;
+
+    height:120px;
 
     background:#00d4ff;
 
     color:#08111f;
 
-    padding:25px;
-
     border-radius:15px;
 
     text-align:center;
 
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
     font-weight:700;
 
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
 }
+
+
 
 .experience-box h3{
 
-    font-size:36px;
+    font-size:38px;
+
+    line-height:1;
+
+    margin:0 0 8px;
 
 }
+
+
 
 .experience-box span{
 
     font-size:15px;
 
+    white-space:nowrap;
+
 }
+
+
+
+/* Subtitle */
 
 .section-subtitle{
 
@@ -634,6 +671,10 @@ ul{
 
 }
 
+
+
+/* Heading */
+
 .about-content h2{
 
     font-size:42px;
@@ -644,6 +685,8 @@ ul{
 
 }
 
+
+
 .about-content p{
 
     color:#d6d6d6;
@@ -653,6 +696,10 @@ ul{
     margin-bottom:30px;
 
 }
+
+
+
+/* Features */
 
 .about-features{
 
@@ -666,6 +713,8 @@ ul{
 
 }
 
+
+
 .feature{
 
     display:flex;
@@ -678,6 +727,8 @@ ul{
 
 }
 
+
+
 .feature i{
 
     color:#00d4ff;
@@ -685,6 +736,10 @@ ul{
     font-size:18px;
 
 }
+
+
+
+/* Button */
 
 .about-btn{
 
@@ -704,11 +759,69 @@ ul{
 
 }
 
+
+
 .about-btn:hover{
 
     transform:translateY(-5px);
 
     box-shadow:0 10px 25px rgba(0,212,255,.30);
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .about-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .experience-box{
+
+        right:20px;
+
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .about-content h2{
+
+        font-size:32px;
+
+    }
+
+
+    .about-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .experience-box{
+
+        width:140px;
+
+        height:100px;
+
+    }
+
+
+    .experience-box h3{
+
+        font-size:32px;
+
+    }
 
 }
 /*======================================
