@@ -239,7 +239,6 @@ counters.forEach(counter=>{
 
 
 
-
 /*======================================
         CONTACT FORM
         EMAIL + WHATSAPP
@@ -249,7 +248,6 @@ counters.forEach(counter=>{
 const contactForm = document.getElementById(
     "contact-form"
 );
-
 
 
 if(contactForm){
@@ -264,52 +262,50 @@ if(contactForm){
 
 
 
-            const name =
-            document.querySelector(
+            const name = document.querySelector(
                 'input[name="name"]'
             ).value;
 
 
 
-            const email =
-            document.querySelector(
+            const email = document.querySelector(
                 'input[name="email"]'
             ).value;
 
 
 
-            const phone =
-            document.querySelector(
+            const phone = document.querySelector(
                 'input[name="phone"]'
             ).value;
 
 
 
-            const message =
-            document.querySelector(
+            const message = document.querySelector(
                 'textarea[name="message"]'
             ).value;
 
 
 
 
-
-            /* EMAILJS */
-
+            // EmailJS Data
 
             const templateParams = {
 
-                name:name,
+                name: name,
 
-                email:email,
+                email: email,
 
-                phone:phone,
+                phone: phone,
 
-                message:message
+                message: message
 
             };
 
 
+
+
+
+            // SEND EMAIL
 
             emailjs.send(
 
@@ -323,8 +319,9 @@ if(contactForm){
 
             .then(function(response){
 
+
                 console.log(
-                    "Email Sent",
+                    "Email Sent Successfully",
                     response
                 );
 
@@ -333,8 +330,9 @@ if(contactForm){
 
             .catch(function(error){
 
+
                 console.log(
-                    "Email Error",
+                    "Email Sending Error",
                     error
                 );
 
@@ -346,13 +344,12 @@ if(contactForm){
 
 
 
-
-            /* WHATSAPP */
+            // WHATSAPP MESSAGE
 
 
             const whatsappMessage =
 
-            "New Website Inquiry\n\n" +
+            "New Website Inquiry - Direct Surveillance\n\n" +
 
             "Name: " + name + "\n" +
 
@@ -365,8 +362,10 @@ if(contactForm){
 
 
 
+
             const whatsappNumber =
             "923274777737";
+
 
 
 
@@ -384,6 +383,7 @@ if(contactForm){
 
 
 
+
             window.open(
 
                 whatsappURL,
@@ -391,6 +391,7 @@ if(contactForm){
                 "_blank"
 
             );
+
 
 
 
