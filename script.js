@@ -238,7 +238,6 @@ counters.forEach(counter=>{
 
 
 
-
 /*======================================
         CONTACT FORM
         EMAIL + WHATSAPP
@@ -287,8 +286,6 @@ if(contactForm){
 
 
 
-            // EmailJS Data
-
             const templateParams = {
 
                 name: name,
@@ -305,7 +302,7 @@ if(contactForm){
 
 
 
-            // SEND EMAIL
+            // EMAILJS SEND
 
             emailjs.send(
 
@@ -320,19 +317,28 @@ if(contactForm){
             .then(function(response){
 
 
+                alert("Email Sent Successfully");
+
+
                 console.log(
-                    "Email Sent Successfully",
+                    "Email Success:",
                     response
                 );
 
 
             })
 
+
             .catch(function(error){
 
 
+                alert(
+                    "Email Error - Check Console"
+                );
+
+
                 console.log(
-                    "Email Sending Error",
+                    "Email Error:",
                     error
                 );
 
@@ -344,7 +350,8 @@ if(contactForm){
 
 
 
-            // WHATSAPP MESSAGE
+
+            // WHATSAPP SEND
 
 
             const whatsappMessage =
