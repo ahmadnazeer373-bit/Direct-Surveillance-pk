@@ -1,7 +1,20 @@
 /*======================================
-        MOBILE MENU
+        EMAILJS INITIALIZE
 ======================================*/
 
+(function(){
+
+    emailjs.init("WZR_5_WuqrscbBkWJ");
+
+})();
+
+
+
+
+
+/*======================================
+        MOBILE MENU
+======================================*/
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navbar = document.querySelector(".navbar");
@@ -9,7 +22,7 @@ const navbar = document.querySelector(".navbar");
 
 if(menuToggle && navbar){
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click",()=>{
 
         navbar.classList.toggle("active");
 
@@ -25,13 +38,12 @@ if(menuToggle && navbar){
         STICKY HEADER
 ======================================*/
 
-
 const header = document.querySelector(".header");
 
 
 if(header){
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener("scroll",()=>{
 
 
         if(window.scrollY > 100){
@@ -61,10 +73,10 @@ if(header){
 ======================================*/
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 
-    anchor.addEventListener("click", function(e){
+    anchor.addEventListener("click",function(e){
 
 
         const target = document.querySelector(
@@ -101,10 +113,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 ======================================*/
 
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
+document.querySelectorAll(".nav-menu a").forEach(link=>{
 
 
-    link.addEventListener("click", () => {
+    link.addEventListener("click",()=>{
 
 
         if(navbar){
@@ -135,7 +147,7 @@ const backToTop = document.getElementById("backToTop");
 if(backToTop){
 
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener("scroll",()=>{
 
 
         if(window.scrollY > 400){
@@ -155,7 +167,7 @@ if(backToTop){
 
 
 
-    backToTop.addEventListener("click", () => {
+    backToTop.addEventListener("click",()=>{
 
 
         window.scrollTo({
@@ -185,13 +197,13 @@ if(backToTop){
 const counters = document.querySelectorAll(".counter");
 
 
-counters.forEach(counter => {
+counters.forEach(counter=>{
 
 
-    counter.innerText = "0";
+    counter.innerText="0";
 
 
-    const updateCounter = () => {
+    const updateCounter=()=>{
 
 
         const target = +counter.getAttribute(
@@ -219,7 +231,6 @@ counters.forEach(counter => {
 
         }
 
-
         else{
 
 
@@ -243,7 +254,8 @@ counters.forEach(counter => {
 
 
 /*======================================
-        CONTACT FORM WHATSAPP
+        CONTACT FORM
+        WHATSAPP + EMAIL
 ======================================*/
 
 
@@ -265,42 +277,105 @@ if(contactForm){
 
 
 
-            const name = document.querySelector(
+            const name =
+            document.querySelector(
                 'input[name="name"]'
             ).value;
 
 
 
-            const email = document.querySelector(
+            const email =
+            document.querySelector(
                 'input[name="email"]'
             ).value;
 
 
 
-            const phone = document.querySelector(
+            const phone =
+            document.querySelector(
                 'input[name="phone"]'
             ).value;
 
 
 
-            const message = document.querySelector(
+            const message =
+            document.querySelector(
                 'textarea[name="message"]'
             ).value;
 
 
 
 
+
+            /* EMAILJS */
+
+
+            const templateParams = {
+
+                name:name,
+
+                email:email,
+
+                phone:phone,
+
+                message:message
+
+            };
+
+
+
+
+            emailjs.send(
+
+                "service_m6kcowm",
+
+                "template_k0dbqnq",
+
+                templateParams
+
+            )
+
+            .then(function(){
+
+
+                console.log(
+                    "Email Sent Successfully"
+                );
+
+
+            })
+
+            .catch(function(error){
+
+
+                console.log(
+                    "Email Error",
+                    error
+                );
+
+
+            });
+
+
+
+
+
+
+
+            /* WHATSAPP */
+
+
             const whatsappMessage =
 
             "New Website Inquiry\n\n" +
 
-            "Name: " + name + "\n" +
+            "Name: "+name+"\n" +
 
-            "Email: " + email + "\n" +
+            "Email: "+email+"\n" +
 
-            "Phone: " + phone + "\n" +
+            "Phone: "+phone+"\n" +
 
-            "Message: " + message;
+            "Message: "+message;
 
 
 
@@ -331,6 +406,11 @@ if(contactForm){
                 "_blank"
 
             );
+
+
+
+            contactForm.reset();
+
 
 
         }
