@@ -345,6 +345,9 @@ ul{
 
 
 
+
+/* Counter Layout */
+
 .counter-wrapper{
 
     display:grid;
@@ -356,6 +359,10 @@ ul{
 }
 
 
+
+
+
+/* Counter Box */
 
 .counter-box{
 
@@ -375,15 +382,23 @@ ul{
 
 
 
+
+
 .counter-box:hover{
 
     transform:translateY(-8px);
 
     border-color:#00d4ff;
 
+    box-shadow:0 10px 25px rgba(0,212,255,.20);
+
 }
 
 
+
+
+
+/* Number */
 
 .counter-box h3{
 
@@ -397,18 +412,48 @@ ul{
 
 
 
-.counter-box p{
+
+
+/* Text */
+
+.counter-box span{
 
     color:#d6d6d6;
 
     font-size:16px;
 
 }
+
+
+
+
+
 /*======================================
-        COUNTER MOBILE RESPONSIVE
+        TABLET RESPONSIVE
+=======================================*/
+
+@media(max-width:992px){
+
+
+    .counter-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+/*======================================
+        MOBILE RESPONSIVE
 =======================================*/
 
 @media(max-width:576px){
+
 
     .counter-wrapper{
 
@@ -421,7 +466,7 @@ ul{
 
     .counter-box{
 
-        padding:20px 10px;
+        padding:22px 8px;
 
     }
 
@@ -433,11 +478,12 @@ ul{
     }
 
 
-    .counter-box p{
+    .counter-box span{
 
         font-size:12px;
 
     }
+
 
 }
 /*======================================
