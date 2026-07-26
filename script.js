@@ -45,19 +45,16 @@ if(header){
 
     window.addEventListener("scroll",()=>{
 
-
         if(window.scrollY > 100){
 
             header.classList.add("sticky");
 
         }
-
         else{
 
             header.classList.remove("sticky");
 
         }
-
 
     });
 
@@ -75,9 +72,7 @@ if(header){
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
-
     anchor.addEventListener("click",function(e){
-
 
         const target = document.querySelector(
             this.getAttribute("href")
@@ -88,7 +83,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
             e.preventDefault();
 
-
             target.scrollIntoView({
 
                 behavior:"smooth"
@@ -97,9 +91,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
         }
 
-
     });
-
 
 });
 
@@ -115,9 +107,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 document.querySelectorAll(".nav-menu a").forEach(link=>{
 
-
     link.addEventListener("click",()=>{
-
 
         if(navbar){
 
@@ -125,9 +115,7 @@ document.querySelectorAll(".nav-menu a").forEach(link=>{
 
         }
 
-
     });
-
 
 });
 
@@ -155,7 +143,6 @@ if(backToTop){
             backToTop.classList.add("show");
 
         }
-
         else{
 
             backToTop.classList.remove("show");
@@ -255,7 +242,7 @@ counters.forEach(counter=>{
 
 /*======================================
         CONTACT FORM
-        WHATSAPP + EMAIL
+        EMAIL + WHATSAPP
 ======================================*/
 
 
@@ -324,10 +311,9 @@ if(contactForm){
 
 
 
-
             emailjs.send(
 
-                service_9dfndos
+                "service_9dfndos",
 
                 "template_k0dbqnq",
 
@@ -335,18 +321,17 @@ if(contactForm){
 
             )
 
-            .then(function(){
-
+            .then(function(response){
 
                 console.log(
-                    "Email Sent Successfully"
+                    "Email Sent",
+                    response
                 );
 
 
             })
 
             .catch(function(error){
-
 
                 console.log(
                     "Email Error",
@@ -369,13 +354,13 @@ if(contactForm){
 
             "New Website Inquiry\n\n" +
 
-            "Name: "+name+"\n" +
+            "Name: " + name + "\n" +
 
-            "Email: "+email+"\n" +
+            "Email: " + email + "\n" +
 
-            "Phone: "+phone+"\n" +
+            "Phone: " + phone + "\n" +
 
-            "Message: "+message;
+            "Message: " + message;
 
 
 
