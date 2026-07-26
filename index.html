@@ -831,9 +831,9 @@
 <!--======================================
             GALLERY SECTION END
 =======================================-->
-        <!--======================================
+      /*======================================
             CONTACT SECTION START
-=======================================-->
+=======================================*/
 
 <section class="contact" id="contact">
 
@@ -846,17 +846,16 @@
                 Contact Us
             </span>
 
-
             <h2>
                 Get In Touch With Us
             </h2>
-
 
         </div>
 
 
 
         <div class="contact-wrapper">
+
 
 
             <!-- Contact Information -->
@@ -884,6 +883,7 @@
 
 
 
+
                 <div class="contact-box">
 
                     <i class="fa-brands fa-whatsapp"></i>
@@ -904,6 +904,7 @@
 
 
 
+
                 <div class="contact-box">
 
                     <i class="fa-solid fa-envelope"></i>
@@ -921,6 +922,7 @@
                     </div>
 
                 </div>
+
 
 
 
@@ -948,35 +950,46 @@
 
 
 
+
+
             <!-- Contact Form -->
 
 
             <div class="contact-form">
 
 
-                <form>
+                <form id="contact-form">
 
 
                     <input type="text"
+                           name="name"
                            placeholder="Your Name"
                            required>
 
 
 
+
                     <input type="email"
+                           name="email"
                            placeholder="Your Email"
                            required>
 
 
 
+
                     <input type="tel"
+                           name="phone"
                            placeholder="Your Phone"
                            required>
 
 
 
-                    <textarea rows="5"
-                              placeholder="Your Message"></textarea>
+
+                    <textarea name="message"
+                              rows="5"
+                              placeholder="Your Message"
+                              required></textarea>
+
 
 
 
@@ -991,6 +1004,7 @@
 
 
             </div>
+
 
 
         </div>
