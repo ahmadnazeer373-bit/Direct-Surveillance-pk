@@ -142,63 +142,87 @@ counters.forEach(counter => {
 // CONTACT FORM WHATSAPP
 //======================================
 
-const contactForm = document.getElementById("contactForm");
+
+const contactForm = document.getElementById("contact-form");
 
 
 if(contactForm){
 
+
     contactForm.addEventListener("submit", function(e){
+
 
         e.preventDefault();
 
 
+
         let name = document.querySelector(
-            'input[placeholder="Your Name"]'
+            'input[name="name"]'
         ).value;
+
 
 
         let email = document.querySelector(
-            'input[placeholder="Your Email"]'
+            'input[name="email"]'
         ).value;
+
 
 
         let phone = document.querySelector(
-            'input[placeholder="Your Phone"]'
+            'input[name="phone"]'
         ).value;
+
 
 
         let message = document.querySelector(
-            'textarea'
+            'textarea[name="message"]'
         ).value;
+
 
 
 
         let whatsappMessage =
+
         "New Website Inquiry\n\n" +
+
         "Name: " + name + "\n" +
+
         "Email: " + email + "\n" +
+
         "Phone: " + phone + "\n" +
+
         "Message: " + message;
+
 
 
 
         let whatsappNumber = "923274777737";
 
 
+
         let whatsappURL =
+
         "https://wa.me/" +
+
         whatsappNumber +
+
         "?text=" +
+
         encodeURIComponent(whatsappMessage);
 
 
 
+
         window.open(
+
             whatsappURL,
+
             "_blank"
+
         );
 
 
     });
+
 
 }
