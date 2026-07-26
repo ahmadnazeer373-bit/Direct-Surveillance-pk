@@ -285,6 +285,15 @@ if(contactForm){
 
 
 
+            const finalMessage =
+
+            message +
+
+            "\n\nThank you, our team will contact you soon.";
+
+
+
+
 
             const templateParams = {
 
@@ -294,7 +303,7 @@ if(contactForm){
 
                 phone: phone,
 
-                message: message
+                message: finalMessage
 
             };
 
@@ -317,9 +326,6 @@ if(contactForm){
             .then(function(response){
 
 
-                alert("Email Sent Successfully");
-
-
                 console.log(
                     "Email Success:",
                     response
@@ -330,11 +336,6 @@ if(contactForm){
 
 
             .catch(function(error){
-
-
-                alert(
-                    "Email Error - Check Console"
-                );
 
 
                 console.log(
@@ -364,7 +365,9 @@ if(contactForm){
 
             "Phone: " + phone + "\n" +
 
-            "Message: " + message;
+            "Message: " + message + "\n\n" +
+
+            "Thank you, our team will contact you soon.";
 
 
 
@@ -398,7 +401,6 @@ if(contactForm){
                 "_blank"
 
             );
-
 
 
 
