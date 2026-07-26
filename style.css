@@ -405,6 +405,42 @@ ul{
 
 }
 /*======================================
+        COUNTER MOBILE RESPONSIVE
+=======================================*/
+
+@media(max-width:576px){
+
+    .counter-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:15px;
+
+    }
+
+
+    .counter-box{
+
+        padding:20px 10px;
+
+    }
+
+
+    .counter-box h3{
+
+        font-size:28px;
+
+    }
+
+
+    .counter-box p{
+
+        font-size:12px;
+
+    }
+
+}
+/*======================================
             ABOUT SECTION
 =======================================*/
 
